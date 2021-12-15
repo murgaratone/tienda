@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;  
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  background-color: #3B4252;
+  color: #E5E9F0;
+}
+
+.login-main {
+    max-width: 600px;  
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #2E3440;
+    padding: 36px;        
+    position: relative;
+    border-radius: 24px;
+}
+
+.login-main h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #A3BE8C;
+  
+
+}
+
+.login-main p {
+  font-size: 20px;
+}
+
+.login-main::before {
+    background: rgba(0, 0, 0, 0.3);
+    content: '';
+    
+    /* Position */
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: translate(1rem, 1rem);
+
+    /* Size */
+    height: 100%;
+    width: 100%;
+
+    /* Display under the main content */
+    z-index: -1;
+    border-radius: 24px;
+}
+
+.logo {
+  min-height: 280px;
+  min-width: 100%;
+  background-image: url(../imgs/cropped-LOGO.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.login-main button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 36px;
+  font-size: 20px;
+  text-transform: none;
+}
+
+input {
+  color: #ECEFF4;
+  font-size: 20px;
+}
+
+/* The alert message box */
+.notificacion {
+  padding: 20px; 
+  color: white;
+  margin-bottom: 15px;
+}
+
+.alert {
+	background-color: #f44336; /* Red */
+	padding: 20px; 
+	color: white;
+	margin-bottom: 15px;	
+}
+
+.info {
+	 background-color: blue; /* Red */
+	 padding: 20px; 
+	 color: white;
+	 margin-bottom: 15px;  
+}
+
+.success {
+	 background-color: green; /* Red */
+	 padding: 20px; 
+	 color: white;
+	 margin-bottom: 15px;  
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
+/* -----------------inicio codigo styles pagina principal-------------------- */
+
+#body_main {
+  font-family: 'Roboto', sans-serif;  
+  font-size: 20px;
+  display:block;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  background-color: #3B4252;
+  color: #E5E9F0;
+  margin:0;
+}
+
+/*ubicacion y tamaños del logo*/
+
+.logo2 {
+  width: 100px;
+  height: 60px;
+  background-image: url(../imgs/cropped-LOGO.png);
+  --background-size: contain;
+  background-repeat: no-repeat;
+  margin: 10px; 
+}
+
+/*alinea con el logo y la cabecera*/
+
+.cabecera{
+    background-color: #2E3440;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* tamaño del texto*/
+
+.cabecera h1{
+	font-size: 28px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+
+/* fondo del menu de navegacion*/
+
+#navega{	
+	background-color: #495164;
+}
+
+
+#menu{
+	margin: 0;
+	padding: 0;
+	margin-top: 0px;
+}
+
+
+/* para que se ubiquen en un solo bloque el linea*/
+
+#menu li{
+	list-style: none;
+	display: inline-block;
+}
+
+
+/* stylos del menu de navegacion*/
+
+#menu li a{
+	text-decoration: none;
+	position: relative;
+	color:white;
+	font-size: 15px;
+	font-weight: 700;
+	font-family: sans-serif;
+	display:block;
+	overflow: hidden;
+	transition:0.7s all;
+	padding: 14px 20px;
+	text-transform: uppercase;
+}
+
+
+/*  stylos de la linea que desliza*/
+
+#menu li a:before {
+	content: '';
+	width: 30px;
+	position: absolute;
+	border-bottom: 5px solid #313131;
+	bottom: 0;
+	right: 350px;
+	transition:0.7s all;	
+}
+
+
+/* para que haga la animacion*/
+
+#menu li a:hover:before {
+	right: 0;
+}
+
+
+
+footer {
+  
+  background-color: #3B4252;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: white;
+  
+}
+.redes {
+
+    width: 100%;
+    height:60px;
+    background: #3B4252;
+    display:flex;   
+   	justify-content: center;
+   	align-items: center;
+}
+
+.redes .fab {
+	margin: 0 15px;
+	width: 40px;
+	height: 40px;
+	text-align:center;
+	line-height: 40px;
+    background:#2E3440;
+	border-radius: 50%;
+	cursor:pointer;
+	color: #ECEFF4;
+	transition: all 0.3s ease;
+   	
+	
+}
+.redes .icon1:hover{
+	background:#9b4dca;
+	transform: scale(1.2);
+
+}
+
+.redes .icon2:hover{
+	background:#9b4dca;
+	transform: scale(1.2);
+	
+}
+.redes .icon3:hover{
+	background:#9b4dca;
+	transform: scale(1.2);
+			
+}
+
+.titulo{
+	color: white;
+			
+}
+
+.los-th {
+	text-align: end;
+}
+
+.conductor{
+	border: none;
+	color:black;
+}
+#codigo2{
+	
+	border: none;
+}
+.notificacion{
+	background-color: #2E345B;
+	color: red;
+	border-radius: 5px;
+	align-self: auto;
+}
+
+#factura-para-imprimir{
+	font-size: small;
+	border: 0.1rem solid rgb(255, 0, 0);
+	border-radius: 5px;
+	max-height: 70rem;
+}
+.invisib{
+	
+	color: black;
+}
+#queda{
+	color: black;
+}

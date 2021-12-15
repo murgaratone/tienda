@@ -1,0 +1,482 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;  
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  background-color: #3B4252;
+  color: #E5E9F0;
+}
+
+.login-main {
+    max-width: 600px;  
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #2E3440;
+    padding: 36px;        
+    position: relative;
+    border-radius: 24px;
+}
+
+.login-main h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #A3BE8C;
+  
+
+}
+
+.login-main p {
+  font-size: 20px;
+}
+
+.login-main::before {
+    background: rgba(0, 0, 0, 0.3);
+    content: '';
+    
+    /* Position */
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: translate(1rem, 1rem);
+
+    /* Size */
+    height: 100%;
+    width: 100%;
+
+    /* Display under the main content */
+    z-index: -1;
+    border-radius: 24px;
+}
+
+.logo {
+  min-height: 140px;
+  min-width: 60%;
+  background-image: url(../imgs/Logofinalm.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.login-main button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 36px;
+  font-size: 20px;
+  text-transform: none;
+}
+
+input {
+  color: #ECEFF4;
+  font-size: 20px;
+}
+
+/* The alert message box */
+.notificacion {
+  padding: 20px; 
+  color: white;
+  margin-bottom: 15px;
+}
+
+.alert {
+	background-color: #f44336; /* Red */
+	padding: 20px; 
+	color: white;
+	margin-bottom: 15px;	
+}
+
+.info {
+	 background-color: blue; /* Red */
+	 padding: 20px; 
+	 color: white;
+	 margin-bottom: 15px;  
+}
+
+.success {
+	 background-color: green; /* Red */
+	 padding: 20px; 
+	 color: white;
+	 margin-bottom: 15px;  
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
+/* -----------------inicio codigo styles pagina principal-------------------- */
+
+.body_main {
+  font-family: 'Roboto', sans-serif;  
+  font-size: 20px;
+  display:block;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  background: linear-gradient(180deg, #65bce8 0%, #306485 100%);
+  color: #E5E9F0;
+  margin:0;
+}
+
+/*ubicacion y tamaños del logo*/
+
+.logo2 {
+  width: 120px;
+  height: 90px;
+  background-image: url(../imgs/Logofinalsintiendam.svg);
+  margin: 10px; 
+}
+
+/*alinea con el logo y la cabecera*/
+
+.cabecera{
+    background: linear-gradient(183deg, #445be3, #4a4a4512); 
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+    
+	
+}
+
+
+
+/* tamaño del texto*/
+
+.cabecera h1{
+	font-size: 40px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+
+/* fondo del menu de navegacion*/
+
+#navega{	
+	background: linear-gradient(183deg, #133b71 28%, #3760b1 84%);
+	width: 100%;
+	height: auto;
+	
+	
+}
+
+
+.menu{
+	margin: 0;
+	padding: 0;
+	margin-top: 0px;
+}
+
+
+/* para que se ubiquen en un solo bloque el linea*/
+
+.menu li{
+	list-style: none;
+	display: inline-block;
+}
+
+
+/* stylos del menu de navegacion*/
+
+.menu li a{
+	text-decoration: none;
+	position: relative;
+	color:white;
+	font-size: 15px;
+	font-weight: 700;
+	font-family: sans-serif;
+	display:block;
+	overflow: hidden;
+	transition:0.7s all;
+	padding: 14px 20px;
+	text-transform: uppercase;
+}
+
+
+/*  stylos de la linea que desliza*/
+
+.menu li a:before {
+	content: '';
+	width: 30px;
+	position: absolute;
+	border-bottom: 5px solid #313131;
+	bottom: 0;
+	right: 350px;
+	transition:0.7s all;	
+}
+
+
+/* para que haga la animacion*/
+
+.menu li a:hover:before {
+	right: 0;
+}
+
+
+
+/*---------------fondo animado---------------------*/
+
+.fondo-animado {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+
+span.uno,
+span.dos,
+span.tres,
+span.cuatro {
+	border: 0;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: black;
+	animation: vuelta 7s linear infinite normal both;
+	
+}
+
+span.uno {
+	width: 100px;
+	height: 100px;
+	bottom: -100px;
+	background-color: aqua;
+	border-radius: 20%;
+	margin-bottom: 10px;
+	animation: hue 3s infinite;
+    color: #96d5ea!important;
+    background-color: #FFF;
+    height: 49px!important;
+    border-radius: 50px;
+    width: 49px!important;
+    margin-top: -6px!important;
+    border-right: 1px solid #e7e7e7;
+}
+
+span.dos {
+	width: 70px;
+	height: 70px;
+	bottom: -70px;
+	background-color: blue;
+	border-radius: 20%;
+	margin-bottom: 10px;
+}
+
+span.tres {
+	width: 50px;
+	height: 50px;
+	bottom: -50px;
+	background-color: #4b5f81;
+	border-radius: 20%;
+	margin-bottom: 10px;
+	opacity: 100;
+}
+
+span.cuatro {
+	width: 20px;
+	height: 20px;
+	bottom: -20px;
+	background-color: #27215f;
+	border-radius: 20%;
+	margin-bottom: 10px;
+	opacity: 10;
+}
+
+
+@keyframes vuelta {
+	from {
+		transform: rotate(0deg);
+		bottom: 0;
+		opacity: 0;
+	}
+	5% {
+		opacity: 1;	
+	}
+	60% {
+	opacity: 10;
+	}
+	to {
+		transform: rotate(360deg);
+		bottom: calc(100% + 100px);
+		opacity: 0;
+	}
+	40% {
+		background-color: #33C7FF;
+	}
+	40% {
+		background-color: #BE33FF;
+	}
+	20% {
+		background-color: #33A8FF;
+	}
+	
+}
+
+.fondo-animado span:nth-child(1){
+	left:5%;
+}
+
+.fondo-animado span:nth-child(2){
+	left:50%;
+}
+
+.fondo-animado span:nth-child(3){
+	left:35%;
+}
+
+.fondo-animado span:nth-child(4){
+	left:75%;
+}
+
+.fondo-animado span:nth-child(5){
+	left:25%;
+}
+
+.fondo-animado span:nth-child(6){
+	left:85%;
+}
+
+.fondo-animado span:nth-child(7){
+	left:90%;
+}
+
+.fondo-animado span:nth-child(8){
+	left:60%;
+}
+
+.fondo-animado span:nth-child(9){
+	left:75%;
+}
+
+.fondo-animado span:nth-child(10){
+	left:45%;
+}
+
+.fondo-animado span:nth-child(11){
+	left:5%;
+}
+
+.fondo-animado span:nth-child(12){
+	left:5%;
+}
+
+span.delay-1 {
+	animation-delay: 1s;
+}
+span.delay-2 {
+	animation-delay: 2s;
+}
+span.delay-3 {
+	animation-delay: 3s;
+}
+span.delay-4 {
+	animation-delay: 4s;
+}
+span.delay-5 {
+	animation-delay: 5s;
+}
+span.delay-6 {
+	animation-delay: 6s;
+}
+span.delay-7 {
+	animation-delay: 7s;
+}
+
+#usuario {
+	border-spacing: 1px;
+}
+
+/*----------------------diseño de tablas azules----------*/
+table {
+	opacity: 0.9;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4em;
+    font-style: normal;
+    border-collapse:separate;
+}
+
+table th{
+	
+    padding: 10px;
+    color: #fff;
+    text-shadow: 3px 3px 4px #2c22f1;
+    border: 1px solid #7f37ce;
+    border-bottom: 3px solid #296bd9;
+    background-color: #29d93e;
+    background: -webkit-gradient( linear, 
+    							left bottom,
+    						    left top,
+    						    color-stop(0.02, rgb(119 121 231)),
+								color-stop(0.51, rgb(66 144 198)),
+								color-stop(0.87, rgb(28 89 134)) );
+    background: -moz-linear-gradient(
+        center bottom,
+        rgb(123,192,67) 2%,
+        rgb(139,198,66) 51%,
+        rgb(158,217,41) 87%
+        );
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+   
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+table tbody th:empty{
+	
+    background:transparent;
+    border:none;
+}
+
+
+table td{
+    color: #9CD009;
+    /*font-size:32px;*/
+    text-align:center;
+    padding:10px 0px;
+    text-shadow:1px 1px 1px #444;
+}
+table td{
+    color:#666;
+}
+
+
+table td{
+    padding: 10px;
+    text-align: center;
+    background-color: #cacff3;
+    border: 2px solid #e0ecef;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 6px;
+    color: #666;
+    text-shadow: 1px 1px 1px #f7c;
+}
