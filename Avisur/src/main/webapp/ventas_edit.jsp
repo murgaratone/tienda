@@ -39,8 +39,7 @@ UsuariosDTO usuarioConectado=(UsuariosDTO)session.getAttribute("usuarioConectado
 
 <h2>Editar Venta</h2>
 
-
-<div id="factura" style="background:rgb(59, 66, 82);">
+<!-- <div id="factura" style="background:rgb(59, 66, 82);"> -->
 <form action="app" method="post">
 <fieldset>
   
@@ -137,8 +136,8 @@ UsuariosDTO usuarioConectado=(UsuariosDTO)session.getAttribute("usuarioConectado
 <td><%=itemProducto.getDescripcion() %></td>
 
 <td align="right"><%=dato.getCantidad() %></td>
-<!-- <td align="right"><%=dato.getValor() %></td>-->
-<!-- <td align="right"><%=dato.getValor_total() %></td>-->
+<td align="right"><%=dato.getValor() %></td>
+<td align="right"><%=dato.getValor_total() %></td>
 </tr>
 <% } %>
 <tr>
@@ -147,7 +146,7 @@ UsuariosDTO usuarioConectado=(UsuariosDTO)session.getAttribute("usuarioConectado
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <th>Subtotal</th>
-<!-- <td align="right"><%=data.getSubtotal()%></td> -->
+<td align="right"><%=data.getSubtotal()%></td>
 </tr>
 
 <tr>
@@ -156,7 +155,7 @@ UsuariosDTO usuarioConectado=(UsuariosDTO)session.getAttribute("usuarioConectado
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <th>IVA</th>
-<!-- <td align="right"><%=data.getIva()%></td> -->
+<td align="right"><%=data.getIva()%></td>
 </tr>
 
 <tr>
@@ -165,7 +164,7 @@ UsuariosDTO usuarioConectado=(UsuariosDTO)session.getAttribute("usuarioConectado
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <th>Total</th>
-<!-- <td align="right"><%=data.getTotal()%></td> -->
+<td align="right"><%=data.getTotal()%></td>
 </tr>
 
 </table>
@@ -247,8 +246,8 @@ UsuariosDTO usuarioConectado=(UsuariosDTO)session.getAttribute("usuarioConectado
 		<td><%=itemProducto.getDescripcion() %></td>
 		
 		<td align="right"><%=dato.getCantidad() %></td>
-		<!-- <td align="right"><%=dato.getValor() %></td>-->
-		<!-- <td align="right"><%=dato.getValor_total() %></td>-->
+		<td align="right"><%=dato.getValor() %></td>
+		<td align="right"><%=dato.getValor_total() %></td>
 		</tr>
 		<% } %>
 		<tr>
@@ -257,7 +256,7 @@ UsuariosDTO usuarioConectado=(UsuariosDTO)session.getAttribute("usuarioConectado
 		<td>&nbsp;</td>
 		<td>&nbsp;</td>
 		<th>Subtotal</th>
-		<!-- <td align="right"><%=data.getSubtotal()%></td> -->
+		<td align="right"><%=data.getSubtotal()%></td>
 		</tr>
 		
 		<tr>
@@ -266,7 +265,7 @@ UsuariosDTO usuarioConectado=(UsuariosDTO)session.getAttribute("usuarioConectado
 		<td>&nbsp;</td>
 		<td>&nbsp;</td>
 		<th>IVA</th>
-		<!-- <td align="right"><%=data.getIva()%></td> -->
+		<td align="right"><%=data.getIva()%></td>
 		</tr>
 		
 		<tr>
@@ -275,7 +274,7 @@ UsuariosDTO usuarioConectado=(UsuariosDTO)session.getAttribute("usuarioConectado
 		<td>&nbsp;</td>
 		<td>&nbsp;</td>
 		<th>Total</th>
-		<!-- <td align="right"><%=data.getTotal()%></td> -->
+		<td align="right"><%=data.getTotal()%></td>
 		</tr>
 		
 		</table>

@@ -50,9 +50,9 @@ UsuariosDTO usuarioConectado=(UsuariosDTO)session.getAttribute("usuarioConectado
 <% itemUsuario = listaDAO.seleccionar("USUARIOS",dato.getUsuario_id()); %>	
 <td><%=itemUsuario.getDescripcion() %></td>
 
-<!-- <td><%=dato.getSubtotal() %></td> -->
-<!-- <td><%=dato.getIva() %></td>-->
-<!-- <td><%=dato.getTotal() %></td>-->
+<td><%=dato.getSubtotal() %></td>
+<td><%=dato.getIva() %></td>
+<td><%=dato.getTotal() %></td>
 </tr>
 <% } %>
 </table>
