@@ -59,9 +59,9 @@ body {
 }
 
 .logo {
-  min-height: 280px;
+  min-height: 330px;
   min-width: 100%;
-  background-image: url(../imgs/cropped-LOGO.png);
+  background-image: url(../imgs/tienda-online.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -144,7 +144,7 @@ input {
 .logo2 {
   width: 100px;
   height: 60px;
-  background-image: url(../imgs/cropped-LOGO.png);
+  background-image: url(../imgs/tienda-online.png);
   --background-size: contain;
   background-repeat: no-repeat;
   margin: 10px; 
@@ -317,3 +317,5 @@ footer {
 #queda{
 	color: black;
 }
+
+

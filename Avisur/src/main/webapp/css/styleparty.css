@@ -154,10 +154,11 @@ input {
 .cabecera{
     background: linear-gradient(183deg, #445be3, #4a4a4512); 
     display: flex;
-    justify-content: initial;
+    justify-content: space-between;
     align-items: center;
-    
-	
+}
+.cabecera a{
+	color: white;
 }
 
 
@@ -468,7 +469,6 @@ table td{
     color:#666;
 }
 
-
 table td{
     padding: 10px;
     text-align: center;
@@ -479,4 +479,8 @@ table td{
     border-radius: 6px;
     color: #666;
     text-shadow: 1px 1px 1px #f7c;
+}
+
+ul #fiesta{
+	color: white;
 }

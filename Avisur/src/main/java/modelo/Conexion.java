@@ -16,7 +16,7 @@ public class Conexion {
 
 
           // db parameters
-          conn = DriverManager.getConnection("jdbc:mysql://localhost/avisur","root","maumorales");
+          conn = DriverManager.getConnection("jdbc:mysql://localhost/avisur","root","root");
 
           System.out.println("Connection to MySQL has been established.");
 

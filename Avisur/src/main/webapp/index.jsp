@@ -134,7 +134,7 @@ UsuariosDTO usuarioConectado=(UsuariosDTO)session.getAttribute("usuarioConectado
 
 <header >
 	<div id="header" class="cabecera">
-			<img class="inicio" href="login.jsp" src="./imgs/cropped-LOGO.png" alt="" width="150" height="60">
+			<img class="inicio" href="login.jsp" src="./imgs/tienda-online.png" alt="" width="250" height="100">
 		<h1><a class="titulo" href="index.jsp"></a> <%=usuarioConectado.getRol()%></h1>
 		<button class="close button line-height-2.8 text-white rounded p-2"arial-label="Close" ><a class="titulo" href="login.jsp">CERRAR SESION
 		<span>&times;</span></a></button>
@@ -178,7 +178,7 @@ UsuariosDTO usuarioConectado=(UsuariosDTO)session.getAttribute("usuarioConectado
 		<%if (usuarioConectado.getRol().equals("administrador")){	%>
 		<li><a href="app?modulo=usuarios&accion=listar">Contador</a></li>
 		<%} %>
-		<%if (usuarioConectado.getRol().equals("administrador")||usuarioConectado.getRol().equals("Secretaria")){	%>
+		<%if (usuarioConectado.getRol().equals("administrador")||usuarioConectado.getRol().equals("secretaria")){	%>
 		<li><a href="app?modulo=clientes&accion=listar">Clientes</a></li>
 		<%} %>
 		<%if (usuarioConectado.getRol().equals("administrador")){	%>
@@ -188,7 +188,7 @@ UsuariosDTO usuarioConectado=(UsuariosDTO)session.getAttribute("usuarioConectado
 		<li><a href="app?modulo=productos&accion=listar">Productos</a></li>
 		<%} %>
 		
-		<%if (usuarioConectado.getRol().equals("administrador")||usuarioConectado.getRol().equals("Secretaria")){	%>
+		<%if (usuarioConectado.getRol().equals("administrador")||usuarioConectado.getRol().equals("secretaria")){	%>
 		<li><a href="app?modulo=ventas&accion=listar">Secretaria</a></li>
 		<%} %>
 		<%if (usuarioConectado.getRol().equals("vendedor")

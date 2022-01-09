@@ -37,7 +37,7 @@ UsuariosDTO usuarioConectado=(UsuariosDTO)session.getAttribute("usuarioConectado
 
 <% for (VentasDTO dato: data) { %>
 <tr>
-<%if (usuarioConectado.getRol().equals("administrador")||usuarioConectado.getRol().equals("Secretaria")){	%>
+<%if (usuarioConectado.getRol().equals("administrador")||usuarioConectado.getRol().equals("secretaria")){	%>
 <td><a class="button" href="app?modulo=ventas&accion=editar&id=<%=dato.getId()%>">Editar</a></td>
 <%}%>
 <td><%=dato.getId() %></td>
